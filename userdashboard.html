@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - FarmConnect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/farmer.ico">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-100 font-roboto flex flex-col min-h-screen">
+      <div class="max-w-screen-lg mx-auto p-0 flex flex-col flex-grow">
+    <!-- Header -->
+    <header class="w-full flex items-center justify-between py-4 px-6">
+        <div class="text-2xl font-bold flex items-center">
+            👨🏻‍🌾 FarmConnect
+        </div>
+        <nav>
+            <a class="text-green-800 font-semibold px-4 py-2 hover:bg-gray-200 rounded-full" href="user.html">Home</a>
+        </nav>
+        <div class="flex items-center space-x-4">
+            <a href="notifications.html" class="text-green-800 font-semibold px-4 py-2 hover:bg-gray-200 rounded-full">
+                <i class="fas fa-bell"></i>
+            </a>
+            <a href="cart.html" class="text-green-800 font-semibold px-4 py-2 hover:bg-gray-200 rounded-full">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+            <button onclick="logout()" class="bg-red-600 px-4 py-2 rounded-full hover:bg-red-700">Logout</button>
+        </div>
+    </header>
+
+    <!-- Main Content (Centered Cards) -->
+    <div class="flex-1 flex flex-col items-center justify-center text-center p-6">
+        <!-- User Profile -->
+        <div>
+            <i class="fas fa-user-circle text-6xl text-green-700"></i>
+            <h2 class="text-2xl font-bold text-green-800 mt-2">Tanmay</h2>
+            <p class="text-gray-600">aids.61.tanmaymandal@gmail.com</p>
+        </div>
+
+        <!-- Centered Dashboard Grid -->
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="card bg-green-100 hover:bg-green-200 text-center p-6 rounded-lg shadow-md cursor-pointer">
+                <a href="my_account.html">
+                    <i class="fas fa-user text-4xl text-green-700"></i>
+                    <h3 class="text-lg font-semibold mt-2">My Account</h3>
+                </a>
+            </div>
+            <div class="card bg-green-100 hover:bg-green-200 text-center p-6 rounded-lg shadow-md cursor-pointer">
+                <a href="my_orders.html">
+                    <i class="fas fa-shopping-bag text-4xl text-green-700"></i>
+                    <h3 class="text-lg font-semibold mt-2">My Orders</h3>
+                </a>
+            </div>
+            <div class="card bg-green-100 hover:bg-green-200 text-center p-6 rounded-lg shadow-md cursor-pointer">
+                <a href="my_address.html">
+                    <i class="fas fa-map-marker-alt text-4xl text-green-700"></i>
+                    <h3 class="text-lg font-semibold mt-2">My Address</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (Sticks to Bottom) -->
+    <footer class="w-full bg-green-900 text-white py-8 mt-12 mt-auto">
+        <div class="max-w-screen-lg mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-lg font-semibold">About Us</h3>
+                <p class="text-gray-300 text-sm mt-2">FarmConnect is a platform connecting farmers and consumers, ensuring the freshness of produce and fair pricing.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">Quick Links</h3>
+                <ul class="mt-2 text-sm">
+                    <li><a href="about.html" class="hover:underline">About Us</a></li>
+                    <li><a href="privacy.html" class="hover:underline">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="hover:underline">Terms of Service</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">Follow Us</h3>
+                <div class="flex space-x-4 mt-2">
+                    <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-400 text-sm mt-6">
+            &copy; 2025 FarmConnect. All rights reserved.
+        </div>
+    </footer>
+      </div>
+    <!-- Logout Script -->
+    <script>
+        function logout() {
+            alert("Logging out...");
+            window.location.href = "login.html";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Home - FarmConnect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="images/farmer.ico">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-100 font-roboto">
+    <div class="max-w-screen-lg mx-auto p-0">
+        <!-- Header -->
+        <header class="w-full flex items-center justify-between py-4 px-6">
+            <div class="text-2xl font-bold text-green-800 flex items-start">👨🏻‍🌾 FarmConnect</div>
+            <nav class="flex items-center space-x-4">
+                <a class="text-green-800 font-semibold px-4 py-2 hover:bg-gray-200 rounded-full" href="index.html">Home</a>
+                <a class="text-green-800 font-semibold px-4 py-2 hover:bg-gray-200 rounded-full" href="farmer_marketplace.html">Marketplace</a>
+                <a href="dashboard.html" class="flex items-center text-green-800 hover:bg-gray-200 rounded-full px-4 py-2">
+                    <i class="fas fa-tachometer-alt"></i>
+                </a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="notifications.html" class="text-green-800 hover:text-green-900">
+                    <i class="fas fa-bell"></i>
+                </a>
+                <button onclick="redirectTo('signin.html')" class="bg-green-800 text-white px-4 py-2 rounded-full hover:bg-green-900"><i class="fas fa-user"></i> Login</button>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="text-center mt-8">
+            <h1 class="text-4xl font-bold text-green-700 leading-tight">Empowering Farmers, Connecting Markets</h1>
+            <p class="mt-4 text-gray-700 max-w-2xl mx-auto">
+                A digital platform where farmers can list their products, contracts can be negotiated seamlessly.
+            </p>
+        </section>
+        <section class="mt-12">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4 text-center">Farmer's Side</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card bg-white rounded-lg shadow-md overflow-hidden hover:bg-gray-200">
+                    <img src="images/sellyourfarmproduct.jpg" class="w-full h-48 object-cover" alt="sell">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Sell Your Farm Products</h3>
+                        <p class="text-gray-600">Farmers can list their fresh farm products directly on the platform.</p>
+                    </div>
+                </div>
+                <div class="card bg-white rounded-lg shadow-md overflow-hidden hover:bg-gray-200">
+                    <img src="images/contractfarming.jpg" class="w-full h-48 object-cover" alt="contract">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Contract Farming</h3>
+                        <p class="text-gray-600">Negotiate and sign long-term contracts for bulk purchases.</p>
+                    </div>
+                </div>
+                <div class="card bg-white rounded-lg shadow-md overflow-hidden hover:bg-gray-200">
+                    <img src="images/bulkorders.jpg" class="w-full h-48 object-cover" alt="Bulk">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Bulk Orders</h3>
+                        <p class="text-gray-600">Buy large quantities of farm produce directly from the source, ensuring freshness and fair pricing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+       <!-- How It Works -->
+<section class="mt-12">
+    <h2 class="text-xl font-semibold text-gray-700 mb-6 text-center">How It Works</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-6 text-center">
+        
+        <div class="card bg-white p-6 rounded-lg shadow-md hover:bg-gray-200">
+            <i class="fas fa-shopping-cart text-green-700 text-3xl mb-2"></i>
+            <h3 class="text-lg font-semibold text-green-700">Sell Directly to Buyers</h3>
+            <p class="text-gray-600">No middlemen! Farmers can list their products and sell directly to consumers, retailers, and businesses.</p>
+        </div>
+
+        <div class="card bg-white p-6 rounded-lg shadow-md hover:bg-gray-200">
+            <i class="fas fa-hand-holding-usd text-green-700 text-3xl mb-2"></i>
+            <h3 class="text-lg font-semibold text-green-700">Better Prices & More Profit</h3>
+            <p class="text-gray-600">Get fair market prices for your produce without additional commission cuts.</p>
+        </div>
+
+        <div class="card bg-white p-6 rounded-lg shadow-md hover:bg-gray-200">
+            <i class="fas fa-boxes text-green-700 text-3xl mb-2"></i>
+            <h3 class="text-lg font-semibold text-green-700">Bulk Orders & Contracts</h3>
+            <p class="text-gray-600">Partner with businesses for long-term supply contracts or sell large quantities at wholesale rates.</p>
+        </div>
+
+        <div class="card bg-white p-6 rounded-lg shadow-md hover:bg-gray-200">
+            <i class="fas fa-list text-green-700 text-3xl mb-2"></i>
+            <h3 class="text-lg font-semibold text-green-700">Easy Product Listing</h3>
+            <p class="text-gray-600">Upload details about your farm produce (quantity, pricing, images) and start selling within minutes.</p>
+        </div>
+
+        <div class="card bg-white p-6 rounded-lg shadow-md hover:bg-gray-200">
+            <i class="fas fa-lock text-green-700 text-3xl mb-2"></i>
+            <h3 class="text-lg font-semibold text-green-700">Secure Payments</h3>
+            <p class="text-gray-600">Receive payments directly into your account through safe and transparent transactions.</p>
+        </div>
+
+        <div class="card bg-white p-6 rounded-lg shadow-md hover:bg-gray-200">
+            <i class="fas fa-tasks text-green-700 text-3xl mb-2"></i>
+            <h3 class="text-lg font-semibold text-green-700">Real-Time Order Management</h3>
+            <p class="text-gray-600">Track orders, confirm deliveries, and communicate with buyers easily.</p>
+        </div>
+
+        <div class="card bg-white p-6 rounded-lg shadow-md hover:bg-gray-200">
+            <i class="fas fa-map-marker-alt text-green-700 text-3xl mb-2"></i>
+            <h3 class="text-lg font-semibold text-green-700">GPS-Based Location Tagging</h3>
+            <p class="text-gray-600">List your farm’s location to attract nearby buyers for easy logistics.</p>
+        </div>
+
+        <div class="card bg-white p-6 rounded-lg shadow-md hover:bg-gray-200">
+            <i class="fas fa-chart-line text-green-700 text-3xl mb-2"></i>
+            <h3 class="text-lg font-semibold text-green-700">Market Insights & Analytics</h3>
+            <p class="text-gray-600">Get data-driven insights on demand trends, pricing, and consumer preferences.</p>
+        </div>
+        <div class="card bg-white p-6 rounded-lg shadow-md hover:bg-gray-200">
+            <i class="fas fa-seedling text-green-700 text-3xl mb-2"></i>
+            <h3 class="text-lg font-semibold text-green-700">Harvesting & Quality Check</h3>
+            <p class="text-gray-600">Ensure quality control and proper harvesting to maintain product standards.</p>
+</div>
+    </div>
+</section>
+
+        <!-- Footer -->
+        <footer class="w-full bg-green-900 text-white py-8 mt-12">
+            <div class="max-w-screen-lg mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- About Us -->
+                <div>
+                    <h3 class="text-lg font-semibold">About Us</h3>
+                    <p class="text-gray-300 text-sm mt-2">FarmConnect is an innovative platform designed to connect farmers directly with consumers, ensuring fresh produce and fair pricing.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold">Quick Links</h3>
+                    <ul class="mt-2 text -sm">
+                        <li><a href="about.html" class="hover:underline">About Us</a></li>
+                        <li><a href="privacy.html" class="hover:underline">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:underline">Terms of Service</a></li>
+                        <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <h3 class="text-lg font-semibold">Follow Us</h3>
+                    <div class="flex space-x-4 mt-2">
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center text-gray-400 text-sm mt-6">
+                &copy; 2025 FarmConnect. All rights reserved.
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js" defer></script>
+</body>
+</html>

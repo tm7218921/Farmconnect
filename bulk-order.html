@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulk Order - Direct Market Access</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="images\farmer.ico"> 
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-screen-lg mx-auto p-4">
+        <header class="flex justify-between items-center py-4">
+            <h1 class="text-2xl font-bold text-green-700"><i class="fas fa-truck-loading"></i> Bulk Order</h1>
+            <a class="text-green-800 font-semibold  px-4 py-2 hover:bg-gray-200 rounded-full" href="index.html">Back to Home</a>
+        </header>
+
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold mb-4">Order Large Quantities</h3>
+            
+            <!-- Buyer Type Selection -->
+            <select id="buyerType" class="border w-full px-4 py-2 rounded mt-2">
+                <option>Select Buyer Type</option>
+                <option>Restaurant</option>
+                <option>Factory</option>
+                <option>Wholesaler</option>
+            </select>
+
+            <select id="productSelect" class="border w-full px-4 py-2 rounded mt-2">
+                <option>Select Product</option>
+                <option>Tomatoes (100kg+)</option>
+                <option>Mangoes (200kg+)</option>
+                <option>Potatoes (500kg+)</option>
+                <option>Onions (300kg+)</option>
+                <option>Garlic (100kg+)</option>
+                <option>Rice (1,000kg+)</option>
+                <option>Chicken (150kg+)</option>
+                <option>Milk (200kg+)</option>
+                <option>Fish (100kg+)</option>
+                <option>Cheese (100kg+)</option>
+                <option>Flour (500kg+)</option>
+                <option>Sugar (250kg+)</option>
+                <option>Cooking Oil (100L+)</option>
+                <option>Canned Vegetables (1000 cans+)</option>
+            </select>
+            
+            <input class="border w-full px-4 py-2 rounded mt-2" type="number" placeholder="Enter Order Quantity" min="1"/>
+            <button class="w-full bg-green-700 text-white py-2 px-4 mt-4 rounded-full" onclick="handleOrder()">Submit Order</button>
+
+            <div id="responseMessage" class="mt-4 text-green-700"></div>
+        </div>
+    </div>
+    <script src="js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract - Direct Market Access</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-screen-lg mx-auto p-4">
+        <header class="flex justify-between items-center py-4">
+            <h1 class="text-2xl font-bold text-green-700"><i class="fas fa-pen-fancy"></i> Contract Farming</h1>
+            <a class="text-green-700 hover:underline" href="index.html">Back to Home</a>
+        </header>
+
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold mb-4">1. Initial Agreement</h3>
+            <textarea id="initialAgreement" class="border w-full px-4 py-2 rounded mt-2" placeholder="Enter Initial Agreement Details"></textarea>
+            <button class="btn w-full py-2 px-4 mt-4 rounded-full" onclick="submitInitialAgreement()">Submit Initial Agreement</button>
+        </div>
+
+        <div class="section bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold mb-4">2. Negotiation</h3>
+            <textarea id="negotiationPoints" class="border w-full px-4 py-2 rounded mt-2" placeholder="Enter Negotiation Points"></textarea>
+            <button class="btn w-full py-2 px-4 mt-4 rounded-full" onclick="submitNegotiation()">Submit Negotiation</button>
+        </div>
+
+        <div class="section bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold mb-4">3. Contract Signing</h3>
+            <textarea id="contractDetails" class="border w-full px-4 py-2 rounded mt-2" placeholder="Enter Contract Details for Signing"></textarea>
+            <button class="btn w-full py-2 px-4 mt-4 rounded-full" onclick="submitContract()">Sign Contract</button>
+        </div>
+
+        <div class="section bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold mb-4">4. Harvesting and Quality Check</h3>
+            <textarea id="qualityCheckDetails" class="border w-full px-4 py-2 rounded mt-2" placeholder="Enter Harvesting and Quality Check Details"></textarea>
+            <button class="btn w-full py-2 px-4 mt-4 rounded-full" onclick="submitQualityCheck()">Submit Quality Check</button>
+        </div>
+
+        <div class="section bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold mb-4">5. Payment</h3>
+            <input type="text" id="paymentAmount" class="border w-full px-4 py-2 rounded mt-2" placeholder="Enter Payment Amount" />
+            <button class="btn w-full py-2 px-4 mt-4 rounded-full" onclick="processPayment()">Process Payment</button>
+        </div>
+
+        <div class="section bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold mb-4">6. Delivery and Logistics</h3>
+            <textarea id="deliveryLogisticsDetails" class="border w-full px-4 py-2 rounded mt-2" placeholder="Enter Delivery and Logistics Details"></textarea>
+            <button class="btn w-full py-2 px-4 mt-4 rounded-full" onclick="confirmDelivery()">Confirm Delivery</button>
+        </div>
+    </div>
+    <script src="js/script.js" defer></script>
+</body>
+</html>

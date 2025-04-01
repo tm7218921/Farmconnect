@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders - FarmConnect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="images/farmer.ico">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-100 font-roboto flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="w-full bg-white py-4 px-6 flex justify-between items-center shadow-md">
+        <div class="text-2xl font-bold text-green-800 flex items-center">
+            <img src="images/farmer.ico" class="h-8 w-8 mr-2">
+            <span>FarmConnect</span>
+        </div>
+        <div class="flex items-center space-x-4">
+            <a href="userdashboard.html" class="text-green-800 font-semibold px-4 py-2 hover:bg-gray-200 rounded-full">Back to Dashboard</a>
+        </div>
+    </nav>
+
+    <!-- Orders Section -->
+    <div class="max-w-4xl w-full mx-auto mt-12 p-8 bg-white rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold text-green-700 text-center">My Orders</h2>
+        <p class="text-gray-500 text-center mb-6">Track your recent orders and status</p>
+
+        <!-- Orders Table -->
+        <div class="overflow-x-auto">
+            <table class="w-full border-collapse border border-gray-300">
+                <thead>
+                    <tr class="bg-green-700 text-white">
+                        <th class="py-3 px-4 text-left">Order ID</th>
+                        <th class="py-3 px-4 text-left">Product</th>
+                        <th class="py-3 px-4 text-left">Date</th>
+                        <th class="py-3 px-4 text-left">Status</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white">
+                    <tr class="border-b border-gray-300">
+                        <td class="py-3 px-4">#1023</td>
+                        <td class="py-3 px-4">Fresh Apples (2kg)</td>
+                        <td class="py-3 px-4">March 25, 2025</td>
+                        <td class="py-3 px-4">
+                            <span class="bg-yellow-500 text-white px-3 py-1 rounded-full text-sm">Pending</span>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-gray-300">
+                        <td class="py-3 px-4">#1018</td>
+                        <td class="py-3 px-4">Organic Rice (5kg)</td>
+                        <td class="py-3 px-4">March 20, 2025</td>
+                        <td class="py-3 px-4">
+                            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm">Shipped</span>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-gray-300">
+                        <td class="py-3 px-4">#1005</td>
+                        <td class="py-3 px-4">Free Range Eggs (12 pcs)</td>
+                        <td class="py-3 px-4">March 15, 2025</td>
+                        <td class="py-3 px-4">
+                            <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm">Delivered</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w-full bg-green-900 text-white py-8 mt-12">
+        <div class="max-w-screen-lg mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- About Us -->
+            <div>
+                <h3 class="text-lg font-semibold">About Us</h3>
+                <p class="text-gray-300 text-sm mt-2">FarmConnect is an innovative platform designed to connect farmers directly with consumers, ensuring fresh produce and fair pricing.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-semibold">Quick Links</h3>
+                <ul class="mt-2 text-sm">
+                    <li><a href="about.html" class="hover:underline">About Us</a></li>
+                    <li><a href="privacy.html" class="hover:underline">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="hover:underline">Terms of Service</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div>
+                <h3 class="text-lg font-semibold">Follow Us</h3>
+                <div class="flex space-x-4 mt-2">
+                    <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center text-gray-400 text-sm mt-6">
+            &copy; 2025 Direct Market Access. All rights reserved.
+        </div>
+    </footer>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>

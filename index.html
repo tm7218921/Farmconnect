@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FarmConnect | Welcome</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="icon" type="image/x-icon" href="images/farmer.ico"> 
+</head>
+<body>
+  <div class="split-screen">
+    <!-- Farmer Panel -->
+    <div class="panel" id="farmer-panel">
+      <img class="panel-bg" src="images/farmer1.jpg" alt="Farmer background">
+      <div class="panel-content">
+        <h2>For Farmers</h2>
+        <p>Sell your fresh produce directly to customers and grow your business</p>
+        <a href="#" class="btn" onclick="selectRole('farmer')">List Your Products</a>
+      </div>
+    </div>
+    
+    <!-- Buyer Panel -->
+    <div class="panel" id="buyer-panel">
+      <img class="panel-bg" src="images/consumer.jpg" alt="Vegetables background">
+      <div class="panel-content">
+        <h2>For Buyers</h2>
+        <p>Discover the freshest farm products directly from local growers</p>
+        <a href="#" class="btn" onclick="selectRole('consumer')">Shop Now</a>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

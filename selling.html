@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selling - Direct Market Access</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="images/farmer.ico">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-screen-lg mx-auto p-6 fade-in">
+        <header class="flex justify-between items-center py-4">
+            <h1 class="text-2xl font-bold text-green-700 flex items-center">
+                <i class="fas fa-tag mr-2"></i> Sell A Farm Product
+            </h1>
+            <a class="text-green-800 font-semibold px-4 py-2 hover:bg-gray-200 rounded-full transition-all duration-200" href="user.html">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+        </header>
+
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold mb-4 text-center">List Your Product</h3>
+
+            <!-- Category Selection -->
+            <label class="block text-gray-700 font-semibold">Select Category:</label>
+            <select class="border w-full px-4 py-2 rounded mt-2 focus:outline-none focus:ring focus:ring-green-300" id="categorySelect">
+                <option value="">-- Choose a category --</option>
+                <option value="vegetables">Vegetables</option>
+                <option value="fruits">Fruits</option>
+                <option value="grains">Grains</option>
+            </select>
+
+            <!-- Product Selection (Updated to be dynamic) -->
+            <label class="block mt-4 text-gray-700 font-semibold">Select Product:</label>
+            <select class="border w-full px-4 py-2 rounded mt-2 focus:outline-none focus:ring focus:ring-green-300" id="productSelect" disabled>
+                <option value="">-- Choose a category first --</option>
+            </select>
+
+            <label class="block mt-4 text-gray-700 font-semibold">Price per Unit:</label>
+            <input class="border w-full px-4 py-2 rounded mt-2 focus:outline-none focus:ring focus:ring-green-300" type="text" placeholder="Enter price" required/>
+
+            <label class="block mt-4 text-gray-700 font-semibold">Quantity:</label>
+            <div class="flex items-center mt-2">
+                <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded-l-full hover:bg-gray-400 transition-scale" id="decreaseBtn">-</button>
+                <input type="number" id="quantityInput" class="border w-16 text-center px-4 py-2" value="1" min="1" readonly/>
+                <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded-r-full hover:bg-gray-400 transition-scale" id="increaseBtn">+</button>
+            </div>
+
+            <label class="block mt-4 text-gray-700 font-semibold">Upload Product Image:</label>
+            <input type="file" id="imageUpload" class="border w-full px-4 py-2 rounded mt-2 focus:outline-none focus:ring focus:ring-green-300" accept="image/*">
+            <img id="imagePreview" alt="Product Image Preview" class="mt-2 w-32 h-32 object-cover hidden">
+
+            <button id="listProductBtn" class="w-full bg-green-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-green-800 transition-all duration-200">
+                <i class="fas fa-upload"></i> List Product
+            </button>
+        </div>
+    </div>
+
+<script src="js/script.js" defer></script>
+<Script>
+    
+</Script>
+</body>
+</html>

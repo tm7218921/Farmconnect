@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Listings -FarmConnect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="images\farmer.ico">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-screen-lg mx-auto p-6 fade-in">
+        <header class="flex justify-between items-center py-4">
+            <h1 class="text-2xl font-bold text-green-700 flex items-center">
+                <i class="fas fa-list mr-2"></i> Your Listings
+            </h1>
+            <a class="text-green-800 font-semibold px-4 py-2 hover:bg-gray-200 rounded-full transition-all duration-200" href="selling.html">
+                <i class="fas fa-plus"></i> Add New Product
+            </a>
+        </header>
+
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-semibold mb-4 text-center">Listed Products</h3>
+            <div id="listingsContainer" class="space-y-4"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>

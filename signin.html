@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - FarmConnect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="images/farmer.ico"> 
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="flex min-h-screen bg-gray-100">
+    
+    <!-- Left Side: Welcome Section -->
+    <div class="hidden md:flex w-1/2 items-center justify-center bg-gradient-to-br text-black text-center h-screen">
+        <div class="bg-signin w-full h-full flex flex-col items-center justify-center">
+            <h2 class="text-4xl font-bold">🌱 Welcome Back!</h2>
+            <p class="mt-3 text-lg text-black-100">Enter your details and start your journey with us.</p>
+        </div>
+    </div>
+
+    <!-- Right Side: Sign In Form -->
+    <div class="flex-1 flex items-center justify-center">
+        <div class="max-w-md w-full bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold text-green-700 text-center mb-6">Login into FarmConnect</h2>
+
+            <form id="login-form">
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-medium"><i class="fas fa-phone-alt text-black"></i> Mobile No.</label>
+                    <input type="tel" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Enter your mobile number" required>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-medium"><i class="fas fa-map-marker-alt text-black"></i> Select Region</label>
+                    <select class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                        <option value="mumbai">Mumbai</option>
+                        <option value="pune">Pune</option>
+                    </select>
+                </div>
+
+                <div class="flex items-center my-3">
+                    <input type="checkbox" id="terms" class="mr-2">
+                    <label for="terms" class="text-gray-700 text-sm">I accept the <a href="#" class="text-green-700 font-semibold hover:underline">Terms & Conditions</a></label>
+                </div>
+
+                <div class="flex items-center mb-3">
+                    <input type="checkbox" id="privacy" class="mr-2">
+                    <label for="privacy" class="text-gray-700 text-sm">I accept the <a href="#" class="text-green-700 font-semibold hover:underline">Privacy Policy</a></label>
+                </div>
+
+                <button type="submit" class="w-full bg-green-700 text-white py-3 rounded-lg font-semibold hover:bg-green-800 transition-all">Get OTP</button>
+            </form>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
